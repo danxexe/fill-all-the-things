@@ -13,7 +13,7 @@ f = window.FillAllTheThings ||= {}
 
   types = [
       test: (it) -> it.is(':checkbox,:radio')
-      action: (it) -> it.attr('checked','checked')
+      action: (it) -> it.attr('checked','checked').val()
     ,
       test: (it) -> it.is('select')
       action: (it) -> it.find('option[value="1975"],option:last').val()
